@@ -17,12 +17,16 @@ export class HomePage {
   ) {
       // in-app-browser 생성
       const options: InAppBrowserOptions = {
-        zoom: 'no',
-        location: 'no',
-        toolbar: 'no',
-        hideurlbar: 'yes' //url bar 숨기기
+        usewkwebview: 'yes'
+        // zoom: 'no',
+        // location: 'no',
+        // toolbar: 'no',
+        // hideurlbar: 'yes' //url bar 숨기기
       }
-      const browser = this.iab.create('http://dolearn.co.kr', '_self', 'location=no, hideurlbar=yes, toolbar=no');
+      const browser = this.iab.create('http://dolearn.co.kr', '_self', 'usewkwebview=yes');
+      //_self 작동(O)
+      // const browser = this.iab.create('http://dolearn.co.kr', '_self', 'location=no, hideurlbar=yes, toolbar=no');
+
    //  const browser = this.iab.create('http://dolearn.co.kr');
       //const browser =   cordova.InAppBrowser.open('http://dolearn.co.kr/', '_self', 'location=no');
      
