@@ -23,7 +23,7 @@ export class HomePage {
         // toolbar: 'no',
         // hideurlbar: 'yes' //url bar 숨기기
       }
-      const browser = this.iab.create('http://dolearn.co.kr', '_self', 'usewkwebview=yes');
+      const browser = this.iab.create('http://dolearn.co.kr', '_self', 'location=no, usewkwebview=no');//uiView
       //_self 작동(O)
       // const browser = this.iab.create('http://dolearn.co.kr', '_self', 'location=no, hideurlbar=yes, toolbar=no');
 
